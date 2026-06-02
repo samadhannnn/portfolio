@@ -1,0 +1,22 @@
+services:
+  - type: web
+    name: samadhan-portfolio
+    env: node
+    plan: free
+    buildCommand: npm install && npm run build
+    startCommand: npm run start
+    envVars:
+      - key: NODE_VERSION
+        value: 20
+      - key: ADMIN_PASSWORD
+        sync: false
+        placeholder: "Enter admin dashboard password (default: samadhan123)"
+      - key: OPENAI_API_KEY
+        sync: false
+        placeholder: "Enter OpenAI API Key (optional)"
+      - key: NEXT_PUBLIC_SUPABASE_URL
+        sync: false
+        placeholder: "Enter Supabase URL (optional)"
+      - key: NEXT_PUBLIC_SUPABASE_ANON_KEY
+        sync: false
+        placeholder: "Enter Supabase Anon Key (optional)"
