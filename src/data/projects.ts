@@ -1,0 +1,133 @@
+export interface Project {
+  name: string;
+  title: string;
+  description: string;
+  language: string;
+  tags: string[];
+  githubUrl: string;
+  liveUrl?: string;
+  stars: number;
+  forks: number;
+  updatedAt: string;
+  category: "ai" | "blockchain" | "fullstack" | "web" | "java" | "other";
+}
+
+export const PROJECTS_DATA: Project[] = [
+  {
+    name: "Plant_Disease_Detection",
+    title: "Plant Disease Detection System",
+    description: "Deep learning neural network built using Python, Keras, and TensorFlow. Implements Convolutional Neural Network (CNN) architecture with image preprocessing and data augmentation to classify plant diseases from leaf datasets.",
+    language: "Python",
+    tags: ["Deep Learning", "TensorFlow", "Keras", "CNN", "Python", "Computer Vision"],
+    githubUrl: "https://github.com/samadhannnn/Plant_Disease_Detection",
+    liveUrl: "deploying",
+    stars: 0,
+    forks: 0,
+    updatedAt: "2026-05-10",
+    category: "ai",
+  },
+  {
+    name: "ReaLEstate",
+    title: "Real Estate Blockchain DApp",
+    description: "Decentralized Web3 real estate application facilitating secure, peer-to-peer land registry and property sales. Employs Solidity for smart contract rules, Hardhat for local blockchain testing, and Ethers.js for wallet integration.",
+    language: "Solidity",
+    tags: ["Solidity", "Hardhat", "React.js", "Ethers.js", "Web3", "Blockchain"],
+    githubUrl: "https://github.com/samadhannnn/ReaLEstate",
+    liveUrl: "deploying",
+    stars: 0,
+    forks: 0,
+    updatedAt: "2026-04-18",
+    category: "blockchain",
+  },
+  {
+    name: "Evoting",
+    title: "E-Voting Blockchain System",
+    description: "Secure, tamper-proof e-voting platform that leverages smart contracts to distribute cryptographic voting tokens and verify vote counts in real-time, preventing fraudulent election adjustments.",
+    language: "Solidity",
+    tags: ["Solidity", "Hardhat", "React.js", "Ethers.js", "Blockchain", "Security"],
+    githubUrl: "https://github.com/samadhannnn/Evoting",
+    liveUrl: "deploying",
+    stars: 0,
+    forks: 0,
+    updatedAt: "2026-04-02",
+    category: "blockchain",
+  },
+  {
+    name: "Scholorship_Website",
+    title: "Scholarship Verification Portal",
+    description: "Full-stack university scholarship application portal with three levels of document verification: college inspector, regional administrator, and government verifier. Features role-based access control and dashboard audits.",
+    language: "PHP",
+    tags: ["PHP", "MySQL", "Bootstrap", "HTML/CSS", "Full Stack"],
+    githubUrl: "https://github.com/samadhannnn/Scholorship_Website",
+    liveUrl: "deploying",
+    stars: 0,
+    forks: 0,
+    updatedAt: "2025-11-20",
+    category: "fullstack",
+  },
+  {
+    name: "Online_cheating_Protector",
+    title: "Online Exam Proctoring Tool",
+    description: "Proctoring script designed to secure web exams. Monitors page visibility changes, window refocusing, clipboard events, and keyboard shortcuts, flagging instances where a student switches browser tabs.",
+    language: "JavaScript",
+    tags: ["JavaScript", "HTML", "CSS", "Security", "Browser API"],
+    githubUrl: "https://github.com/samadhannnn/Online_cheating_Protector",
+    liveUrl: "https://proctorai-jzdo.onrender.com",
+    stars: 0,
+    forks: 0,
+    updatedAt: "2025-08-30",
+    category: "web",
+  },
+  {
+    name: "ipl-match-predictor",
+    title: "IPL Match Predictor",
+    description: "Machine learning application predicting cricket match winners using historical stats. Includes a Python/Scikit-Learn predictive model and a lightweight frontend to input match parameters (venue, teams, toss decisions).",
+    language: "Python",
+    tags: ["Machine Learning", "Python", "Scikit-Learn", "Data Science"],
+    githubUrl: "https://github.com/samadhannnn/ipl-match-predictor",
+    liveUrl: "https://ipl-match-predictor-nixm.onrender.com/",
+    stars: 0,
+    forks: 0,
+    updatedAt: "2025-07-15",
+    category: "ai",
+  },
+  {
+    name: "Car_model",
+    title: "Car Price Regression Model",
+    description: "Regression simulation model built in Python to evaluate vehicle specifications, fuel efficiencies, engine stats, and calculate suggested market listings based on target trends.",
+    language: "Python",
+    tags: ["Machine Learning", "Python", "Pandas", "Regression"],
+    githubUrl: "https://github.com/samadhannnn/Car_model",
+    liveUrl: "deploying",
+    stars: 0,
+    forks: 0,
+    updatedAt: "2025-07-02",
+    category: "ai",
+  },
+  {
+    name: "Java-Tutorial-main",
+    title: "Java OOP & Algorithms Study",
+    description: "Comprehensive repository of Java implementations focusing on object-oriented architecture, custom data structures (linked lists, trees, graphs), sorting methodologies, and algorithmic study guides.",
+    language: "Java",
+    tags: ["Java", "OOP", "Data Structures", "Algorithms", "Study Guide"],
+    githubUrl: "https://github.com/samadhannnn/Java-Tutorial-main",
+    liveUrl: "deploying",
+    stars: 0,
+    forks: 0,
+    updatedAt: "2025-06-29",
+    category: "java",
+  },
+  {
+    name: "Animated_website",
+    title: "GSAP Animated Creative Site",
+    description: "Interactive promotional landing page featuring highly responsive GSAP, ScrollTrigger, and CSS transitions. Focuses on premium typography, micro-interactions, and visual layouts.",
+    language: "JavaScript",
+    tags: ["JavaScript", "CSS", "GSAP", "ScrollTrigger", "UI Design"],
+    githubUrl: "https://github.com/samadhannnn/Animated_website",
+    liveUrl: "deploying",
+    stars: 0,
+    forks: 0,
+    updatedAt: "2025-06-28",
+    category: "web",
+  },
+];
